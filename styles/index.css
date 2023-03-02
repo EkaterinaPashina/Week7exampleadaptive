@@ -27,7 +27,7 @@
 
 .container3 {
     background-color: #a648ff;
-    width: 800px;
+    width: 650px;
     height: 350px;
     padding: 10px;
 
@@ -39,27 +39,27 @@
 .content1 {
     background-color:#f1dcff;
     height: 80px;
-    width: 380px;
+    width: 305px;
     margin: 5px;
 }
 
 .content2 {
     background-color: #f1dcff;
     height: 80px;
-    width: 380px;
+    width: 305px;
     margin: 5px;
 }
 
 .content3 {
     background-color: #f1dcff;
     height: 80px;
-    width: 790px;
+    width: 640px;
     margin: 5px;
 }
 
 .sidebar {
     background-color: #d195ff;
-    width: 424px;
+    width: 374px;
     height: 350px;
 }
 
