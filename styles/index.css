@@ -11,8 +11,8 @@
 }
 
 .header {
-    width: 1024px;
-    height: 100px;
+    width: 100%;
+    height: 20%;
     margin: 0 auto;
     background-color: #8b00ff;
 }
@@ -20,15 +20,15 @@
 .container2{
     display: flex;
     flex-direction: row;
-    width: 1024px;
-    height: 350px;
+    width: 100%;
+    height: 60%;
     margin: 0 auto;
 }
 
 .container3 {
     background-color: #a648ff;
-    width: 650px;
-    height: 350px;
+    width: 60%;
+    height: 100%;
     padding: 10px;
 
     display: flex;
@@ -38,66 +38,122 @@
 
 .content1 {
     background-color:#f1dcff;
-    height: 80px;
-    width: 305px;
+    height: 20%;
+    width: 48%;
     margin: 5px;
 }
 
 .content2 {
     background-color: #f1dcff;
-    height: 80px;
-    width: 305px;
+    height: 20%;
+    width: 48%;
     margin: 5px;
 }
 
 .content3 {
     background-color: #f1dcff;
-    height: 80px;
-    width: 640px;
+    height: 20%;
+    width: 98%;
     margin: 5px;
 }
 
 .sidebar {
     background-color: #d195ff;
-    width: 374px;
-    height: 350px;
+    width: 40%;
+    height: 100%;
 }
 
 .footer {
     background-color: #bd71ff;
-    width: 1024px;
-    height: 150px;
+    width: 100%;
+    height: 20%;
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
-
 }
 
 .sec1{
     background-color:#f1dcff;
-    width: 220px;
-    height: 120px;
+    width: 23%;
+    height: 80%;
 }
 
 .sec2{
     background-color:#f1dcff;
-    width: 220px;
-    height: 120px;
+    width: 23%;
+    height: 80%;
 }
 
 .sec3{
     background-color:#f1dcff;
-    width: 220px;
-    height: 120px;
+    width: 23%;
+    height: 80%;
 }
 
 .sec4{
     background-color:#f1dcff;
-    width: 220px;
-    height: 120px;
+    width: 23%;
+    height: 80%;
 }
 
-@media only screen and (max-width: 1200px) {
-    
+@media only screen and (max-width: 768px) {
+    .header {
+        width: 100%;
+        background-color: #5500ff;
+        height: 200px;
+    }
+
+    .container2 {
+        width: 100%;
+    }
+
+    .container3 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: space-around;
+        justify-content: flex-end;
+        align-items: center;
+
+        background-color: #9148ff;
+
+        width: 70%;
+    }
+
+    .content1 , .content2 {
+        width: 98%;
+    }
+
+    .content3 {
+        width: 98%;
+        height: 30%
+    }
+
+    .sidebar {
+        background-color: #ba95ff;
+        width: 30%;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        height: 200px;
+    }
+    .sec1 , .sec2 , .sec3 , .sec4 {
+        width: 48%;
+        height: 40%;
+        margin: 10px;
+    }
+
+}
+
+@media only screen and (max-width: 375px) {
+    .header {
+        background-color: #0084ff;
+        height: 300px;
+    }
 }
