@@ -98,10 +98,15 @@
 }
 
 @media only screen and (max-width: 768px) {
+    .container {
+        margin: 0 auto;
+        height: 1000px;
+    }
+    
     .header {
         width: 100%;
-        background-color: #5500ff;
-        height: 200px;
+        background-color: #8b00ff;
+        height: 10%;
     }
 
     .container2 {
@@ -116,7 +121,7 @@
         justify-content: flex-end;
         align-items: center;
 
-        background-color: #9148ff;
+        background-color: #a648ff;
 
         width: 70%;
     }
@@ -131,7 +136,7 @@
     }
 
     .sidebar {
-        background-color: #ba95ff;
+        background-color: #d195ff;
         width: 30%;
     }
 
@@ -141,7 +146,7 @@
         flex-wrap: wrap;
         justify-content: center;
 
-        height: 200px;
+        height: 30%;
     }
     .sec1 , .sec2 , .sec3 , .sec4 {
         width: 48%;
@@ -152,8 +157,63 @@
 }
 
 @media only screen and (max-width: 375px) {
+    .container {
+        margin: 0 auto;
+        height: 1500px;
+    }
+    
     .header {
-        background-color: #0084ff;
-        height: 300px;
+        width: 100%;
+        background-color: #8b00ff;
+        height: 10%;
+    }
+
+    .container2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+
+    }
+
+    .container3 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: space-around;
+        justify-content: flex-end;
+        align-items: center;
+
+        background-color: #a648ff;
+
+        width: 100%;
+    }
+
+    .content1 , .content2 {
+        width: 98%;
+    }
+
+    .content3 {
+        width: 98%;
+        height: 30%
+    }
+
+    .sidebar {
+        background-color: #d195ff;
+        width: 100%;
+        height: 50%;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        height: 30%;
+    }
+    .sec1 , .sec2 , .sec3 , .sec4 {
+        width: 96%;
+        height: 20%;
+        margin: 10px;
     }
 }
