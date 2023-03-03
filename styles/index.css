@@ -6,13 +6,13 @@
 
 .container {
     margin: 0 auto;
-    width: 1024px;
-    height: 600px;
+    width: 100vw;
+    height: 100vh;
 }
 
 .header {
-    width: 100%;
-    height: 20%;
+    width: 100vw;
+    height: 20vh;
     margin: 0 auto;
     background-color: #8b00ff;
 }
@@ -20,97 +20,70 @@
 .container2{
     display: flex;
     flex-direction: row;
-    width: 100%;
-    height: 60%;
+    width: 100vw;
+    height: 60vh;
     margin: 0 auto;
 }
 
 .container3 {
     background-color: #a648ff;
-    width: 60%;
-    height: 100%;
-    padding: 10px;
+    width: 60vw;
+    height: 60vh;
+    padding: 1vw;
 
     display: flex;
     flex-wrap: wrap;
     align-content: end;
+    justify-content: space-between;
 }
 
-.content1 {
+.content1, .content2 {
     background-color:#f1dcff;
-    height: 20%;
-    width: 48%;
-    margin: 5px;
-}
-
-.content2 {
-    background-color: #f1dcff;
-    height: 20%;
-    width: 48%;
-    margin: 5px;
+    height: 12vh;
+    width: 27vw;
+    margin: 1vw;
 }
 
 .content3 {
     background-color: #f1dcff;
-    height: 20%;
-    width: 98%;
-    margin: 5px;
+    height: 12vh;
+    width: 57vw;
+    margin: 1vh;
 }
 
 .sidebar {
     background-color: #d195ff;
-    width: 40%;
-    height: 100%;
+    width: 40vw;
+    height: 60vh;
 }
 
 .footer {
     background-color: #bd71ff;
-    width: 100%;
-    height: 20%;
+    width: 100vw;
+    height: 20vh;
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.sec1{
+.sec1, .sec2, .sec3, .sec4 {
     background-color:#f1dcff;
-    width: 23%;
-    height: 80%;
+    width: 25vw;
+    height: 16vh;
+    margin: 1vw;
 }
 
-.sec2{
-    background-color:#f1dcff;
-    width: 23%;
-    height: 80%;
-}
-
-.sec3{
-    background-color:#f1dcff;
-    width: 23%;
-    height: 80%;
-}
-
-.sec4{
-    background-color:#f1dcff;
-    width: 23%;
-    height: 80%;
-}
 
 @media only screen and (max-width: 768px) {
-    .container {
-        margin: 0 auto;
-        height: 1000px;
-    }
-    
     .header {
-        width: 100%;
+        width: 100vw;
         background-color: #8b00ff;
-        height: 10%;
+        height: 14vh;
     }
 
     .container2 {
-        width: 100%;
+        width: 100vw;
     }
 
     .container3 {
@@ -123,21 +96,21 @@
 
         background-color: #a648ff;
 
-        width: 70%;
+        width: 70vw;
     }
 
     .content1 , .content2 {
-        width: 98%;
+        width: 67vw;
     }
 
     .content3 {
-        width: 98%;
-        height: 30%
+        width: 67vw;
+        height: 16vh;
     }
 
     .sidebar {
         background-color: #d195ff;
-        width: 30%;
+        width: 30vw;
     }
 
     .footer {
@@ -146,12 +119,12 @@
         flex-wrap: wrap;
         justify-content: center;
 
-        height: 30%;
+        height: 36vh;
     }
     .sec1 , .sec2 , .sec3 , .sec4 {
-        width: 48%;
-        height: 40%;
-        margin: 10px;
+        width: 47vw;
+        height: 14vh;
+        margin: 1vw;
     }
 
 }
@@ -159,17 +132,17 @@
 @media only screen and (max-width: 375px) {
     .container {
         margin: 0 auto;
-        height: 1500px;
+        height: 100vh;
     }
     
     .header {
-        width: 100%;
+        width: 100vw;
         background-color: #8b00ff;
-        height: 10%;
+        height: 10vh;
     }
 
     .container2 {
-        width: 100%;
+        width: 100vw;
         display: flex;
         flex-direction: column-reverse;
 
@@ -177,7 +150,7 @@
 
     .container3 {
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         flex-direction: column;
         align-content: space-around;
         justify-content: flex-end;
@@ -185,22 +158,24 @@
 
         background-color: #a648ff;
 
-        width: 100%;
+        width: 100vw;
     }
 
     .content1 , .content2 {
-        width: 98%;
+        width: 90vw;
+        height: 4vh;
     }
 
     .content3 {
-        width: 98%;
-        height: 30%
+        width: 90vw;
+        height: 10vh;
     }
 
     .sidebar {
         background-color: #d195ff;
-        width: 100%;
-        height: 50%;
+        width: 100vw;
+        height: 30vh;
+        /* Либо display: none; , хотелось попрактиковать .container2 { flex-direction: column-reverse; } */
     }
 
     .footer {
@@ -209,11 +184,11 @@
         flex-wrap: wrap;
         justify-content: center;
 
-        height: 30%;
+        height: 40vh;
     }
     .sec1 , .sec2 , .sec3 , .sec4 {
-        width: 96%;
-        height: 20%;
-        margin: 10px;
+        width: 90vw;
+        height: 7h;
+        margin: 1vh;
     }
 }
