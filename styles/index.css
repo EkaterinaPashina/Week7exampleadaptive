@@ -184,11 +184,11 @@
         flex-wrap: wrap;
         justify-content: center;
 
-        height: 40vh;
+        height: 70vh;
     }
     .sec1 , .sec2 , .sec3 , .sec4 {
         width: 90vw;
-        height: 70h;
+        height: 7h;
         margin: 1vh;
     }
 }
